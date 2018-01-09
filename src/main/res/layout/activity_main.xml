@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sidescrollerproj.fruitgame.MainActivity">
+
+
+    <FrameLayout
+        android:id="@+id/score_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/score_label"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:text="SCORE: 300"
+            android:textSize="18sp" />
+        <Button
+            android:id="@+id/pause_button"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="PAUSE"
+            android:onClick="pauseAction"/>
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/main_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/apple_sprite"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/apple"></ImageView>
+        <ImageView
+            android:id="@+id/orange_sprite"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/orange"></ImageView>
+        <ImageView
+            android:id="@+id/banana_sprite"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/banana"></ImageView>
+        <ImageView
+            android:id="@+id/grapes_sprite"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/grapes"></ImageView>
+        <ImageView
+            android:id="@+id/cherry_sprite"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/cherry"></ImageView>
+        <ImageView
+            android:id="@+id/melon_sprite"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/watermelon"></ImageView>
+        <ImageView
+            android:id="@+id/fish_sprite"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/fish"></ImageView>
+        <ImageView
+            android:id="@+id/turd_sprite"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/turd"></ImageView>
+        <ImageView
+            android:id="@+id/poison_sprite"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/poison"></ImageView>
+
+
+
+        <ImageView
+            android:id="@+id/basket_sprite"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:src="@drawable/basket"></ImageView>
+
+        <ImageButton
+            android:id="@+id/image_button_left"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_gravity="bottom|left"
+            app:srcCompat="?android:attr/textSelectHandleLeft" />
+
+        <ImageButton
+            android:id="@+id/image_button_right"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_gravity="right|bottom"
+            app:srcCompat="?android:attr/textSelectHandleRight" />
+
+        <TextView
+            android:id="@+id/start_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100dp"
+            android:text="Tap To Start"
+            android:textSize="50sp" />
+
+    </FrameLayout>
+
+</LinearLayout>

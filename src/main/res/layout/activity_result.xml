@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sidescrollerproj.fruitgame.Result"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/game_over_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GAME OVER"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/your_score_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="150"
+        android:textSize="30sp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/game_over_label"/>
+    <TextView
+        android:id="@+id/high_score_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="High Score: 300"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/your_score_label"/>
+    <Button
+        android:id="@+id/try_again_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/high_score_label"
+        android:text="Try Again"
+        android:textAllCaps="false"
+        android:onClick="tryAgain"/>
+</RelativeLayout>
